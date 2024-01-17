@@ -24,7 +24,7 @@ console.log(`
 
 
 `);
-console.log("Write Linkaboba(1) into a console");
+console.log("Напиши Linkaboba(1) в консоль");
 console.log("1100110_1101001_1110010_1100101");
 
 let abobaElements = document.querySelectorAll('.item > a');
@@ -42,10 +42,25 @@ function Linkaboba(a) {
     document.body.style.backgroundImage = "url(images/fire.gif)";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "cover";
+    // document.querySelector(".fire").style.opacity = "10";
+    // document.fire.style.opacity = "0.5"; 
   }
 }
 
-// Random theme
+// const itemLinks = document.querySelectorAll('.item > a');
+
+// itemLinks.forEach(link => {
+//     link.addEventListener('mouseover', function() {
+//         console.log("hi");
+//         link.style.animation = '1';
+//         link.style.animation = "rotatee 1s";
+//       });
+// });
+// function getRandomInt(max) {
+//   return Math.floor(Math.random() * max);
+// }
+
+// Рандом тема
 
 let Theme = Math.floor(Math.random() * 5);
 console.log("Тема сайта", Theme)

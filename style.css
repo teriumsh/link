@@ -1,19 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap');
 
+@keyframes rotatee {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(-360deg)
+    }
+}
+
 *{
     font-family: 'Mulish', sans-serif;
 }
 
-*:not(.decore) {
-    z-index: 1;
-}
-
 body {
+
     margin-top: 100px;
     font-size: 52px;
+    font-weight: 700;
     position: relative;
     background: rgb(17, 112, 7);
     align-items: center;
+}
+
+*:not(.decore) {
+    z-index: 1;
 }
 
 #canvas {
@@ -23,12 +35,15 @@ body {
 }
 
 a {
+    color: black;
     text-decoration: none;
+
 }
 
 .decore {
     position: absolute;
     z-index: 0;
+    /* top: -55%; */
 }
 
 .item {
@@ -55,8 +70,23 @@ a {
     box-shadow: 0px 0px 15px 9px rgb(116, 97, 224);
 }
 
+
+/* .links{ */
+/* display: block; */
+/* position: absolute; */
+/* margin-left: auto; */
+/* margin-right: auto; */
+/* align-items: center; */
+/* animation: rotatee infinite linear 0.5s; */
+/* } */
+
 .tradeoffer {
     color: #71a5d0;
+
+}
+
+.fire {
+    opacity: 0;
 }
 
 .steam {
